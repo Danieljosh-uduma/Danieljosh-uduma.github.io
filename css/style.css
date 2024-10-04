@@ -1,0 +1,301 @@
+@import url('global/boilerplate.css');
+@import url('global/button.css');
+@import url('global/shape.css');
+
+/* header section */
+.header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+    align-items: center;
+    background-color: white;
+    font-weight: bold;
+    z-index: 99;
+}
+.header__logo {
+    font-size: var(--h2);
+}
+.header__nav>ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.header__nav a{
+    padding: 0 20px;
+    color: var(--gray-dark);
+}
+.header__nav a:hover {
+    color: var(--black);
+}
+.header__nav--active {
+    text-decoration: 3px underline;
+    text-decoration-color: var(--green);
+}
+
+/* hero section */
+.hero-section {
+    width: 80%;
+    height: auto;
+    margin: 50px auto;
+    border-bottom: 2px solid var(--gray);
+}
+.hero-section__block {
+    width: 70%;
+    height: inherit;
+    margin: inherit;
+}
+.hero-section__block h1 {
+    font-size: var(--h1);
+    line-height: 3.7rem;
+    margin-bottom: 30px;
+}
+.hero-section__block p {
+    font-size: var(--big);
+    color: var(--gray-dark);
+}
+.hero-section__block span {
+    font-weight: bold;
+}
+.hero-section__img>img {
+    width: 100%;
+    height: inherit;
+    margin: 50px 0;
+}
+
+/* about section */
+.about-section {
+    width: 100%;
+    height: auto;
+}
+.about-section__block {
+    /* border: 2px solid black; */
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    align-items: center;
+}
+.about-section__header {
+    display: grid;
+    width: 60%;
+    height: auto;
+    align-items: center;
+    margin: inherit;
+    margin-bottom: 150px !important;
+}
+.about-section__header>.triangle--small, .about-section__header>h3 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.about-section__header>h3 {
+    font-size: var(--h3);
+    font-weight: 500;
+    width: 90%;
+    margin: 15px 0 0 15px;
+}
+.about-section__header:hover .triangle--small {
+    transform: rotate(0deg);
+}
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    /* border: 2px solid black; */
+}
+.about-section__text {
+    width: 50%;
+    /* margin-bottom: 20px; */
+    /* border: 2px solid salmon; */
+}
+.about-section__text h2 {
+    text-align: left;
+    font-size: var(--h2);
+    margin-bottom: 20px;
+}
+.about-section__text p {
+    text-align: left;
+    font-size: var(--big);
+    line-height: 1.9rem;
+    color: var(--gray-accent);
+}
+.about-section__text>div {
+    margin-top: 30px;
+    float: left;
+}
+.about-section__img, .about-section__img>img {
+    /* border: 2px solid hotpink; */
+    width: 500px;
+    margin-top: -50px ;
+}
+
+/* description block */
+.description__block {
+    width: 600px;
+    height: auto;
+    margin: 30px auto;
+    margin-bottom: 70px !important;
+    padding: 30px 10px;
+    align-items: center;
+    border-top: 2px solid var(--gray);
+    border-bottom: 2px solid var(--gray);
+}
+.description__block>p {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #2c2c2c;
+}
+.description__profile {
+    display: flex;
+    width: 300px;
+    gap: 10px;
+    font-size: var(--small);
+    color: var(--gray-dark);
+    font-weight: light;
+    margin: 20px auto;
+    margin-bottom: 0;
+    align-items: center;
+}
+.description__profile>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    filter: grayscale(100%);
+}
+.description__question {
+    margin-bottom: 20px;
+}
+.description__question>h2 {
+    font-size: var(--h3);
+    margin-bottom: 10px;
+}
+.description__question>p {
+    margin-bottom: 40px;
+    font-size: var(--h3);
+    color: var(--gray-dark);
+}
+
+/* services */
+.services {
+    width: 100%;
+    height: 200vh;
+    background-color: #f5eff5;
+}
+.services__block {
+    width: 80%;
+    height: 160vh;
+    margin: 100px auto;
+}
+.services__header {
+    width: 80%;
+    height: 200px;
+    display: grid;
+    margin: 0 auto;
+    align-items: center;
+}
+.services__header>div {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin: 100px 10px;
+}
+.services__header__text>h2, .services__header__text>p {
+    text-align: left;
+    padding-left: 50px;
+}
+.services__header__text>h2 {
+    font-size: 1.7rem;
+    margin: 10px 0;
+}
+.services__header__text>p {
+    font-size: var(--big);
+    color: var(--gray-accent);
+}
+.services__header:hover .triangle--small{
+    transform: rotate(0deg);
+}
+.services__items {
+    display: grid;
+    height: inherit;
+    grid-template-columns: 1fr 1fr;
+    height: 260px;
+    margin-top: 70px;
+}
+.services__item {
+    width: 400px;
+    height: 240px;
+    margin: 20px auto;
+    align-content: center;
+    border-radius: 5px;
+    transition: all  0.3s ease;
+}
+.services__item:hover {
+    background-color: #d7fad7;
+}
+.services__item>div {
+    width: 65px;
+    height: 65px;   
+    margin: 10px auto;
+    border-radius: 100%; 
+    align-content: center;
+    border: 2px solid var(--green);
+}
+.services__item>h3 {
+    font-size: var(--h3);
+    margin: 20px auto;
+}
+.services__items>p {
+    color: var(--gray-dark);
+    font-size: var(--big);
+}
+.services__button {
+    width: 500px;
+    height: 100px;
+    margin: 20px auto;
+}
+.services__button>h2 {
+    font-size: var(--h3);
+}
+.services__button>div{
+    margin-top: 30px;
+}
+
+/* quote */
+.quote {
+    display: grid;
+    width: 100%;
+    height: 90vh;
+    background-image: url('../images/parallex.jpg');
+    z-index: 0;
+}
+.quote__item, .overlay {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.overlay {
+    background-color: black;
+    opacity: 0.7;
+    width: inherit;
+    height: inherit;
+    z-index: 1;
+}
+.quote__item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: inherit;
+    height: inherit;
+    z-index: 2;
+    color: white;
+    margin: 200px auto;
+}
+.quote__item>h3 {
+    width: 600px;
+    margin: 20px auto;
+    font-size: 1.7rem;
+}
+.quote__item>p {
+    font-size: var(--big);
+    margin: 40px auto;
+}

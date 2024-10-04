@@ -1,0 +1,22 @@
+@import url('boilerplate.css');
+
+.button {
+    background-color: var(--green);
+    color: white;
+    font: var(--big);
+    font-weight: bold;
+    padding: 15px 30px;
+    margin: 20px 0;
+    border-radius: 4px;
+    transition: all ease-in .1s;
+}
+.button:hover {
+    background-color: var(--dark-green);
+}
+
+.block--no-border {
+    border: none !important;
+}
+.block--no-border-bottom {
+    border-bottom: none !important;
+}
